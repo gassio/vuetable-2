@@ -833,7 +833,7 @@ export default {
           ? this.sortOrder[i].field
           : this.sortOrder[i].sortField;
 
-        result += fieldName + '|' + this.sortOrder[i].direction + ((i+1) < this.sortOrder.length ? ',' : '');
+        result += fieldName + '_' + this.sortOrder[i].direction + ((i+1) < this.sortOrder.length ? ',' : '');
       }
       return result;
     },
